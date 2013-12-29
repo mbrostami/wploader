@@ -1,6 +1,8 @@
 <?php 
-global $plugins,$status ,$page ,$usersearch ,$post ,$submenu, $action,$wp_post_types,$hook_suffix,$_wp_submenu_nopriv,$menu,$allowedentitynames,$wp, $wp_query, $wp_the_query,$wpdb,$wp_rewrite;
-
+global $wp_filter, $wp_actions, $merged_filters, $wp_current_filter,$current_blog,$plugins,$status ,$page ,$usersearch ,$post ,$submenu ,$wp_post_types,$hook_suffix,$_wp_submenu_nopriv,$menu,$allowedentitynames,$wp, $wp_query, $wp_the_query,$wpdb,$wp_rewrite;
+$user_login = ''; 
+global $typenow,$taxonomy,$post_type,$post_id ,$comment_status ,$theme ,$user_ID ,$comment,$search   ;
+global $action,$url ,$return,$_wp_admin_css_colors ,$wp_http_referer ,$user_id ,$current_user ,$wp_roles ;
 if($params['action'] == 'wp-login.php')
 {
 	$_SERVER['PHP_SELF'] = '/wp-login.php';
